@@ -1,0 +1,246 @@
+*{
+    box-sizing: border-box; 
+}
+.clear{
+    clear:both;
+}
+
+body{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header img{
+     width:250px;
+ }
+
+header ul{
+    list-style: none;
+    background-color: black;
+    padding: 10px;
+    margin: 0;
+    
+}
+
+header ul li{
+    display: inline;
+    margin: 0 30px 0 0;
+  
+}
+
+header ul li a:hover{
+    color: #F4FF81;
+    transition: 0.6  s;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* carousel */
+
+/* .carousel{
+    background-image: url(../img/slider_1.jpg);
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
+.carousel{
+    width:100%;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+}
+.carousel__slide{ 
+    position: absolute;
+    width:100%;  
+    transition: 2s;
+}
+
+
+.carousel__button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    border:none;
+    background-color: rgba(80, 72, 72,0.2);
+    color: white;
+    padding:16px;
+    transition-duration: 0.1s;
+   
+}
+.carousel__button:hover{
+    background-color: rgba(80, 72, 72,0.7);
+    
+}
+.carousel__right{
+    left:94%;
+}
+
+.carousel__left{
+    left:2%;
+}
+
+/* giới thiệu chung */
+.intro__left, .intro__right {
+    float: left;
+    width: 50%;
+
+}
+
+.intro__item__1{
+    float: left;
+    width: 50%;
+}
+
+.intro__content img{
+    width:100%;  
+    display: block; 
+    
+    /* thêm block vì mặc định trình duyệt thêm khoảng trống  */
+}
+
+.intro__item__2{
+    width:100%;
+   
+}
+.intro__item{
+    padding: 0 10px 10px;
+}
+
+/* .gioiThieu p{
+    text-align:justify;
+}
+.gioiThieu span{
+    color: red;
+    font-weight:bold;
+}
+
+.thuVien__lr{
+    float: left;
+    width: 50%;
+    padding:10px;   
+}
+.thuVien__left__top img{
+    float:left;
+    width: 50%;
+    padding: 5px;
+}
+.thuVien__left__bot img{
+    padding: 5px;
+    width:100%;
+}
+.thuVien__right img{
+   
+    width: 100%;
+    padding: 5px;
+} 
+
+sản phẩm bán chạy  */
+.sanPham h2{
+    text-align: center;
+}
+
+.sanPham__list__item{
+    float:left;
+    width:25%;
+    padding: 20px;
+}
+
+.sanPham__list__item img{
+    width: 100%;
+}
+
+.sanPham__list__item h3{
+    margin: 5px 0;
+    font-size: 22px;
+}
+
+.sanPham__list__item p{
+    margin: 5px 0 20px;
+}
+
+.sanPham__list__item button{
+    background-color:#C62828;
+    border: none;
+    padding:10px;
+    border-radius: 4px;
+    box-shadow: 20px 10px 50px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    color: white;
+}
+
+.sanPham__list__item button:focus{
+    outline: none;
+    border-style:none ;
+}
+
+
+/* ads */
+
+.ads{
+    margin:60px 0 0;
+    padding:10px;
+    background-image: url(../img/nature.jpg);
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    position:relative;
+}
+
+.ads__cirle{
+    color: white;
+    width:200px;
+    height:200px;
+    background-color: rgba(245, 32, 32, 0.514);
+    border-radius:50%;
+    text-align: center;
+    padding-top: 10px; /*nên chỉnh font size trước rồi mới chỉnh */
+    position: absolute;
+    top: 70px;
+    left:200px;
+    /* opacity: 0.4; Opacity làm mờ thẻ và nội dung tất cả chứ trong thẻ đó --> Làm màu nền mờ và làm cả chữ mờ theo*/
+} 
+
+
+
+/* dịch vụ */
+
+.service{
+    width: 70%;  
+    margin: 20px auto;
+}
+
+.service__DV{
+    float: left;
+    width: 33.33%;
+    padding: 20px;
+}
+
+.service__DV img{
+    display: block;   
+    width: 45px;
+    margin: auto;
+}
+
+.service__DV h4, .service__DV p{
+    text-align: center;
+    margin:8px;
+}
+
+/* Footer */
+footer{
+    background-color: #362140;
+   
+}
+.footer{
+    width:40%;
+    color: white;
+    text-align: center;
+    margin:auto;
+    padding:20px;
+}
